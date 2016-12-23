@@ -7,6 +7,7 @@ end
 
 # User management gem - manually added
 gem "clearance"
+gem "clearance-i18n"
 # Privacy Protection gem - manually added
 gem "figaro"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
