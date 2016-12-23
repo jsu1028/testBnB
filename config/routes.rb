@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # get 'welcome/show'
+  root to: 'welcome#show'
+
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource :session, controller: "clearance/sessions", only: [:create]
 
