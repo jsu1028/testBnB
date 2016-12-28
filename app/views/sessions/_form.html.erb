@@ -1,3 +1,4 @@
+<!-- <h1> This is the sign-in page</h1> -->
 <%= form_for :session, url: session_path do |form| %>
   <div class="text-field">
     <%= form.label :email %>
@@ -19,4 +20,6 @@
     <% end %>
     <%= link_to t(".forgot_password"), new_password_path %>
   </div>
+
+  <%= link_to "Sign in with Facebook", "/auth/facebook" %>
 <% end %>
