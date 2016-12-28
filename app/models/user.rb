@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   has_many :authentications, dependent: :destroy
   has_many :listings, dependent: :destroy
+  has_many :bookings
 
   def self.create_with_auth_and_hash(authentication, auth_hash)
     # in learning portal user = Authentication.create which does not function

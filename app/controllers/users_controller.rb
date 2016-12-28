@@ -5,24 +5,8 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  # def new
-  #   @user = User.new
-  # end
-
-  # if override
-  # def create
-  #   @user = User.new(user_params)
-  #
-  #   if @user.save
-  #     # sign_in @user
-  #     redirect_to sign_in_path
-  #   else
-  #     render template: "users/new"
-  #   end
-  # end
-
   def show
-    
+    @bookings = @user.bookings
   end
 
   def edit
