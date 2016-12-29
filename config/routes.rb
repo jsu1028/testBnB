@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/landing'
+
   # get 'welcome/show'
-  root "listings#index"
+  root "static_pages#landing"
 
   resources :users,
              only: [:index, :show, :edit, :update]
