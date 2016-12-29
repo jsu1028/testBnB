@@ -31,15 +31,16 @@
 
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
-                      <div class="item active">
-                          <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-                      </div>
+                    <div class="item active">
+                      <%= image_tag @listing.photos.first, class: "img-response" %>
+                    </div>
+
+                    <% @listing.photos.shift %>
+                    <% @listing.photos.each do |photo| %>
                       <div class="item">
-                          <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        <%= image_tag photo, class: "img-response" %>
                       </div>
-                      <div class="item">
-                          <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-                      </div>
+                    <% end %>
                   </div>
 
                   <!-- Controls -->

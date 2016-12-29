@@ -12,11 +12,16 @@ gem "clearance"
 # Privacy Protection gem - manually added
 gem "figaro"
 # Pagination
-gem 'kaminari'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Front-end
 gem 'bootstrap-sass'
 # Fake data
 gem 'faker'
+# Image Uploading
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'mini_magick'
+gem 'fog'
 # fonts
 gem "font-awesome-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

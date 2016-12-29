@@ -19,6 +19,11 @@
     <%= f.number_field :price, class: "form-control" %>
   </div>
 
+  <div>
+    <%= f.label :photos %>
+    <%= f.file_field :photos, multiple: true, class: "form-control" %>
+  </div>
+
   <hr>
   <%= f.submit "Submit", class: "btn btn-primary col-sm-12" %>
 <% end %>
