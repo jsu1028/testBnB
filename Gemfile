@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# background processing
+gem 'sidekiq'
 # Omniauth-facebook
 gem 'omniauth-facebook'
 # User management gem - manually added
