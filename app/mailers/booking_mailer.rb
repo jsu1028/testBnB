@@ -4,5 +4,6 @@ class BookingMailer < ApplicationMailer
     @customer = customer
     @host = host
     @booking = Booking.find(booking_id)
+    mail(to: @host.email, subject: 'Someone has made a booking on your listing!')
   end
 end

@@ -4,6 +4,7 @@ class BookingsController < ApplicationController
     @booking = current_user.bookings.new(booking_params)
     @booking.listing = @listing
     if @booking.save
+      BookingMailer.booking_email(current_user,@listing.user,@booking.id).deliver_now
       flash[:success] = "Successful - booking saved!"
       redirect_to current_user
     else
